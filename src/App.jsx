@@ -4,6 +4,7 @@ import {Canvas} from 'react-three-fiber'
 import Ground from './Components/Ground.jsx'
 import Player from './Components/Player.jsx'
 import { Physics } from "@react-three/cannon"
+import FPV from "./Components/FPV.jsx"
 function App() {
 
   return (
@@ -12,12 +13,14 @@ function App() {
      <Canvas>
      <Sky sunPosition={[100,100,20]}/>
      <ambientLight intensity={0.5}/>
+      <FPV/>
      <Physics>
       <Ground/>
       <Player/>
      </Physics>
 
      </Canvas>
+     <div className="centered absolute cursor ">+</div>
     </>
   )
 }
