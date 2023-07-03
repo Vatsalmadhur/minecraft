@@ -5,5 +5,5 @@ import logImg from './log.jpg';
 import woodImg from './wood.png';
 
 
-// export default {dirtImg,glassImg,grassImg,logImg,woodImg};
-export default grassImg;
+export  {dirtImg,glassImg,grassImg,logImg,woodImg};
+// export default grassImg;
