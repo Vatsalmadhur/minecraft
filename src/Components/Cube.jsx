@@ -5,7 +5,7 @@ function Cube({position,texture}){
     const [ref] = useBox(()=>({
         type:'Static',
         position:position,
-        texture:texture
+        // texture:texture
     }))
 
     const activeTexture=textures[texture+"Texture"]
