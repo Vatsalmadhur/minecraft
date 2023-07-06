@@ -13,7 +13,18 @@ export const useStore = create((set) => ({
       ],
     }));
   },
-  removeCube: () => {},
+  removeCube: (x,y,z) => {
+    console.log("dafsfs")
+    set((prev) => ({
+      cubes: 
+        prev.cubes.filter(cube=>{
+          const [X,Y,Z]=cube.position
+          return X!=x || Y!=y || Z!=z
+        })
+      ,
+    }));
+
+  },
   setTexture: () => {},
   saveWord: () => {},
   resetWorld: () => {},
