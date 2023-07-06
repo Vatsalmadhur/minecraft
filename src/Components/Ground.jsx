@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { usePlane } from "@react-three/cannon";
 import { groundTexture } from "../images/texture";
 import { useStore } from "../hooks/useStore";
@@ -9,6 +9,12 @@ function Ground() {
     rotation: [-Math.PI / 2, 0, 0],
   }));
   const [addCube] = useStore((state) => [state.addCube]);
+
+  useEffect(()=>{
+    // addCube(10,0,10)
+    // addCube(50,-0,50)
+    
+  },[])
 
   return (
     <>
