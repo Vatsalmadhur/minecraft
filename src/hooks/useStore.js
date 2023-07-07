@@ -4,7 +4,7 @@ export const useStore = create((set) => ({
   texture: "dirt",
   cubes: [],
   addCube: (x, y, z) => {
-    console.log("i ran")
+    // console.log("i ran")
     set((prev) => ({
       ...prev,
       cubes: [
@@ -14,7 +14,7 @@ export const useStore = create((set) => ({
     }));
   },
   removeCube: (x,y,z) => {
-    console.log("dafsfs")
+    // console.log("dafsfs")
     set((prev) => ({
       cubes: 
         prev.cubes.filter(cube=>{

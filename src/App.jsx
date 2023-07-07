@@ -6,6 +6,7 @@ import Player from './Components/Player.jsx'
 import { Physics } from "@react-three/cannon"
 import FPV from "./Components/FPV.jsx"
 import Cubes from "./Components/Cubes.JSX"
+import TextureSelector from "./Components/TextureSelector.jsx"
 function App() {
 
   return (
@@ -23,6 +24,7 @@ function App() {
 
      </Canvas>
      <div className="centered absolute cursor ">+</div>
+     <TextureSelector/>
     </>
   )
 }

@@ -20,14 +20,14 @@ function Ground() {
     <>
       <mesh
         onClick={(e) => {
-          console.log(e.point)
+          // console.log(e.point)
           e.stopPropagation()
           const [x, y, z] = Object.values(e.point)
           .map(val =>
             Math.ceil(val)
             );
             addCube(x, y, z);
-            console.log(x, y, z);
+            // console.log(x, y, z);
             // console.log("cube added");
           }}
 

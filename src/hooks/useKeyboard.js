@@ -14,6 +14,7 @@ function actionByKey(key) {
   };
   return keyActionMap[key];
 }
+
 function useKeyboard() {
   const [actions, setActions] = useState({
     moveForward: false,
@@ -21,12 +22,13 @@ function useKeyboard() {
     moveLeft: false,
     moveRight: false,
     jump: false,
-    texture1: false,
-    texture2: false,
-    texture3: false,
-    texture4: false,
-    texture5: false,
+    dirt: false,
+    grass: false,
+    glass: false,
+    wood: false,
+    log: false,
   });
+  
 
   const handelKeyDown = useCallback((e) => {
     const action = actionByKey(e.code);
@@ -59,6 +61,7 @@ function useKeyboard() {
       document.removeEventListener("keydown", handelKeyDown);
     };
   }, [handelKeyDown, handelKeyUp]);
+  // console.log("action: " ,actions)
   return actions;
 }
 
