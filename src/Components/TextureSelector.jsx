@@ -15,12 +15,12 @@ function TextureSelector(){
 
   useEffect(() => {
     const textures = { dirt, grass, glass, wood, log };
-    console.log("dirt", dirt);
+    // console.log("dirt", dirt);
     const pressedTexture = Object.entries(textures).find(([k, v]) => v);
 
     if (pressedTexture) {
       console.log("pressed", pressedTexture[0]);
-      setTexture(pressedTexture);
+      setTexture(pressedTexture[0]);
     }
   }, [setTexture, dirt, grass, glass, wood, log]);
 

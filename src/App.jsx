@@ -5,7 +5,7 @@ import Ground from './Components/Ground.jsx'
 import Player from './Components/Player.jsx'
 import { Physics } from "@react-three/cannon"
 import FPV from "./Components/FPV.jsx"
-import Cubes from "./Components/Cubes.JSX"
+import Cubes from "./Components/Cubes.jsx"
 import TextureSelector from "./Components/TextureSelector.jsx"
 function App() {
 

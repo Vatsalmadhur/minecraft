@@ -25,7 +25,9 @@ export const useStore = create((set) => ({
     }));
 
   },
-  setTexture: () => {},
+  setTexture: (e) => {
+    set(prev=>({...prev,texture:e}))
+  },
   saveWord: () => {},
   resetWorld: () => {},
 }));
