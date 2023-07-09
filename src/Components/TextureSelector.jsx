@@ -34,7 +34,7 @@ function TextureSelector(){
   useEffect(() => {
     const visiblitiyTimeout = setTimeout(() => {
       setVisible(false);
-    }, 10000);
+    },2000);
     setVisible(true);
     return () => {
       clearTimeout(visiblitiyTimeout);

@@ -7,6 +7,7 @@ import { Physics } from "@react-three/cannon"
 import FPV from "./Components/FPV.jsx"
 import Cubes from "./Components/Cubes.jsx"
 import TextureSelector from "./Components/TextureSelector.jsx"
+import Menu from "./Components/Menu.jsx"
 function App() {
 
   return (
@@ -25,6 +26,7 @@ function App() {
      </Canvas>
      <div className="centered absolute cursor ">+</div>
      <TextureSelector/>
+     <Menu/>
     </>
   )
 }
